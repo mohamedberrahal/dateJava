@@ -3,7 +3,7 @@ public static boolean compareDateAvecNow(String date) {
 		LocalDate dateFin = LocalDate.parse(date, formatter);
 		LocalDate now=LocalDate.parse(LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")).replaceAll("-", ""),formatter);
          System.out.println("date fin "+dateFin);
-		
+		//
 		System.out.println("date now "+now);
 		
 		if (dateFin.isAfter(now) || dateFin.isEqual(now)) {
